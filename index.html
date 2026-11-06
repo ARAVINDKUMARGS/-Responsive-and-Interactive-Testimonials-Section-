@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-palette="aurora">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Intermediate Level Task 5: Responsive and Interactive Testimonials Section with Unique Colors and Prismatic Design." />
+  <title>Wall of Love — Visionary Testimonials</title>
+  
+  <!-- Modern Geometric Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Dynamic Chromatic Ambient Aurora Mesh -->
+  <div class="aurora-mesh" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Noise Overlay for Cinematic Texture Depth -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Main Container -->
+  <main class="page-wrapper">
+    
+    <!-- Testimonials Showcase Section -->
+    <section class="testimonials-section" aria-roledescription="carousel" aria-label="Customer Wall of Love">
+      
+      <!-- Section Header -->
+      <header class="section-header">
+        
+        <!-- Top Toolbar: Badge, Palette Selector, and Dark/Light Switcher -->
+        <div class="header-toolbar">
+          
+          <!-- Radar Pulse Badge -->
+          <div class="pulse-badge">
+            <span class="radar-dot" aria-hidden="true"></span>
+            <span class="badge-text">✦ VERIFIED WALL OF LOVE</span>
+          </div>
+
+          <!-- Color Palette Switcher -->
+          <div class="palette-switcher" role="group" aria-label="Theme color palette selector">
+            <span class="palette-label" aria-hidden="true">AESTHETIC:</span>
+            <button class="palette-btn active" data-palette="aurora" title="Aurora Borealis Palette">
+              <span class="palette-swatch swatch-aurora" aria-hidden="true"></span>
+              <span>Aurora</span>
+            </button>
+            <button class="palette-btn" data-palette="cyber" title="Cyber Acid Palette">
+              <span class="palette-swatch swatch-cyber" aria-hidden="true"></span>
+              <span>Cyber</span>
+            </button>
+            <button class="palette-btn" data-palette="sunset" title="Sunset Luxe Palette">
+              <span class="palette-swatch swatch-sunset" aria-hidden="true"></span>
+              <span>Sunset</span>
+            </button>
+          </div>
+
+          <!-- Light / Dark Contrast Toggle -->
+          <button id="themeToggle" class="mode-toggle-btn" aria-label="Toggle dark/light contrast mode" title="Toggle Light/Dark Contrast">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Editorial Prismatic Title -->
+        <h2 class="section-title">
+          Stories of <span class="gradient-text">Breakthrough Impact</span> & Growth
+        </h2>
+        
+        <p class="section-subtitle">
+          From fast-growing ventures to global market leaders, see how pioneering teams transform operations and scale with confidence.
+        </p>
+
+        <!-- Social Proof Stats Pill with Stacked Avatars -->
+        <div class="social-proof-pill">
+          <div class="avatar-stack" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Customer" class="stack-avatar" />
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Customer" class="stack-avatar" />
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" alt="Customer" class="stack-avatar" />
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="Customer" class="stack-avatar" />
+          </div>
+          <div class="proof-copy">
+            <span class="proof-stars" aria-hidden="true">★★★★★</span>
+            <span class="proof-text"><strong>4.98 / 5.0</strong> from 12,400+ leaders worldwide</span>
+          </div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-pills-row" role="toolbar" aria-label="Filter testimonials by category">
+          <button class="pill-btn active" data-filter="all">All Feedback</button>
+          <button class="pill-btn" data-filter="Productivity">Productivity</button>
+          <button class="pill-btn" data-filter="Engineering">Engineering</button>
+          <button class="pill-btn" data-filter="Design">Design</button>
+          <button class="pill-btn" data-filter="Leadership">Leadership</button>
+        </div>
+
+      </header>
+
+      <!-- Carousel Stage -->
+      <div class="carousel-stage">
+        
+        <!-- Prev Button -->
+        <button 
+          id="prevBtn" 
+          class="stage-nav-btn stage-nav-prev" 
+          aria-label="Previous testimonial" 
+          title="Previous slide (Left Arrow)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Slider Viewport Window -->
+        <div class="slider-viewport" id="sliderViewport" tabindex="0" aria-live="polite">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <!-- Cards rendered dynamically by script.js -->
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <button 
+          id="nextBtn" 
+          class="stage-nav-btn stage-nav-next" 
+          aria-label="Next testimonial" 
+          title="Next slide (Right Arrow)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Controls Dashboard Footer -->
+      <footer class="controls-dashboard">
+        
+        <!-- Digital Cyber Counter -->
+        <div class="cyber-counter" id="sliderCounter" aria-label="Current slide counter">
+          <span class="bracket">[</span>
+          <span class="counter-num active" id="currentSlideNum">01</span>
+          <span class="counter-slash">//</span>
+          <span class="counter-num" id="totalSlidesNum">06</span>
+          <span class="bracket">]</span>
+        </div>
+
+        <!-- Prismatic Pagination Dots -->
+        <div class="pagination-track" id="paginationDots" role="tablist" aria-label="Testimonial slider pagination">
+          <!-- Dots rendered dynamically by script.js -->
+        </div>
+
+        <!-- Autoplay Bar with Live Spectrum Fill -->
+        <div class="autoplay-dashboard">
+          <button id="autoplayBtn" class="autoplay-toggle-pill" aria-label="Pause automatic slide transitions" title="Pause / Resume (Spacebar)">
+            <span class="status-indicator" aria-hidden="true"></span>
+            <span class="autoplay-status-text">AUTOPLAY</span>
+          </button>
+
+          <div class="spectrum-progress-bar" aria-hidden="true">
+            <div class="spectrum-fill" id="progressBarFill"></div>
+          </div>
+        </div>
+
+      </footer>
+
+      <!-- Keyboard Command Chips -->
+      <aside class="keyboard-matrix" aria-hidden="true">
+        <span class="key-chip"><kbd>←</kbd><kbd>→</kbd> Navigate</span>
+        <span class="key-chip"><kbd>Space</kbd> Play / Pause</span>
+        <span class="key-chip"><kbd>Home</kbd><kbd>End</kbd> Jump</span>
+      </aside>
+
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
